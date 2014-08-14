@@ -1,0 +1,1 @@
+Code for Matlab that will approximate small world topologies using two functions. Descriptions in code. 
