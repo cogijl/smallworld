@@ -49,6 +49,10 @@ ASP_temp= mean2(D);
 
 cluster_vec(itcount)=ClusterCoeff_temp;
 ASP_vec(itcount)=ASP_temp;
+% remove infinite values
+ASP_vec=ASP_vec(~isinf(ASP_vec));
+ASP_vec=ASP_vec(~isinf(ASP_vec));
+ASP_vec=ASP_vec(ASP_vec~=0);
 assignin('base','cluster_vec',cluster_vec);
 assignin('base','ASP_vec',ASP_vec);
 
